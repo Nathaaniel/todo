@@ -1,10 +1,17 @@
 import _ from 'lodash';
+import {newProject} from "./newProject";
+import {createTask} from "./createTask";
+
+var projectArray = []
+newProject("My Project", projectArray)
+createTask(projectArray, "My Project", "First Task", "tomorrow", "High", "Will this work", false)
+
 
 function component() {
     const element = document.createElement('div');
   
-    // Lodash, currently included via a script, is required for this line to work
-    element.innerHTML = _.join(['Hello', 'webpa sdf  ck   '], ' ');
+
+    element.innerHTML = JSON.stringify(projectArray);
   
     return element;
   }
