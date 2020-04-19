@@ -2,14 +2,32 @@
   "name": "todo",
   "version": "1.0.0",
   "description": "To Do List",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "npm-watch"
   },
   "repository": {
     "type": "git",
     "url": "todo"
   },
   "author": "Nathaaniel",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "npm-watch": "^0.6.0",
+    "webpack": "^4.42.1"
+  },
+  "watch": {
+    "build": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "js,jsx"
+    }
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.11"
+  }
 }
