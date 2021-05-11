@@ -15,7 +15,7 @@
   "author": "Nathaaniel",
   "license": "ISC",
   "dependencies": {
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "npm-watch": "^0.6.0"
   },
   "watch": {
